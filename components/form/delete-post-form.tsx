@@ -29,9 +29,9 @@ export default function DeletePostForm({ postName }: { postName: string }) {
       className="rounded-lg border border-red-600 bg-white dark:bg-black"
     >
       <div className="relative flex flex-col space-y-4 p-5 sm:p-10">
-        <h2 className="font-cal text-xl dark:text-white">Delete Post</h2>
+        <h2 className="font-cal text-xl dark:text-white">删除帖子</h2>
         <p className="text-sm text-stone-500 dark:text-stone-400">
-          永久删除你的帖子。输入名称{" "}<b>{postName}</b>来确认。
+          永久删除你的帖子。输入标题{" "}<b>{postName}</b>来确认。
         </p>
 
         <input
@@ -46,7 +46,7 @@ export default function DeletePostForm({ postName }: { postName: string }) {
 
       <div className="flex flex-col items-center justify-center space-y-2 rounded-b-lg border-t border-stone-200 bg-stone-50 p-3 dark:border-stone-700 dark:bg-stone-800 sm:flex-row sm:justify-between sm:space-y-0 sm:px-10">
         <p className="text-center text-sm text-stone-500 dark:text-stone-400">
-          此行为不可逆。请务必小心。
+          此行为不可逆。请务必三思而后行。
         </p>
         <div className="w-32">
           <FormButton />

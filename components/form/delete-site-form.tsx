@@ -48,7 +48,7 @@ export default function DeleteSiteForm({ siteName }: { siteName: string }) {
 
       <div className="flex flex-col items-center justify-center space-y-2 rounded-b-lg border-t border-stone-200 bg-stone-50 p-3 dark:border-stone-700 dark:bg-stone-800 sm:flex-row sm:justify-between sm:space-y-0 sm:px-10">
         <p className="text-center text-sm text-stone-500 dark:text-stone-400">
-          此行为不可逆。请务必小心。
+          此行为不可逆。请务必三思而后行。
         </p>
         <div className="w-32">
           <FormButton />

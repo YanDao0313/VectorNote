@@ -106,7 +106,7 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
                   : "border-white text-stone-400 dark:border-black dark:text-stone-600"
               } ease border-b-2 pb-1 text-sm transition-all duration-150`}
             >
-              A Record{!subdomain && " (recommended)"}
+              A 记录{!subdomain && " (更推荐)"}
             </button>
             <button
               type="button"
@@ -117,7 +117,7 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
                   : "border-white text-stone-400 dark:border-black dark:text-stone-600"
               } ease border-b-2 pb-1 text-sm transition-all duration-150`}
             >
-              CNAME Record{subdomain && " (recommended)"}
+              CNAME 记录{subdomain && " (更推荐)"}
             </button>
           </div>
           <div className="my-3 text-left">
@@ -154,7 +154,7 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
               </div>
             </div>
             <p className="mt-5 text-sm dark:text-white">
-            注意：对于TTL，如果<InlineSnippet>86400</InlineSnippet>不可用，请设置尽可能高的值。此外，更改传播最多需要一天。
+              注意：对于TTL，如果<InlineSnippet>86400</InlineSnippet>不可用，请设置尽可能高的值。此外，更改传播最多需要一天。
             </p>
           </div>
         </>
