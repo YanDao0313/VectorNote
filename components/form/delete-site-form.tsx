@@ -31,7 +31,7 @@ export default function DeleteSiteForm({ siteName }: { siteName: string }) {
       className="rounded-lg border border-red-600 bg-white dark:bg-black"
     >
       <div className="relative flex flex-col space-y-4 p-5 sm:p-10">
-        <h2 className="font-cal text-xl dark:text-white">Delete Site</h2>
+        <h2 className="font-cal text-xl dark:text-white">删除站点</h2>
         <p className="text-sm text-stone-500 dark:text-stone-400">
           删除您的网站和与之相关的所有帖子。输入您的站点名称<b>{siteName}</b>来确认。
         </p>
