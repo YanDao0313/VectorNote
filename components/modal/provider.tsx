@@ -1,0 +1,43 @@
+"use client";
+
+import Modal from ".";
+import { ReactNode, createContext, useContext, useState } from "react";
+
+interface ModalContextProps {
+  show: (content: ReactNode) => void;
+  hide: () => void;
+}
+
+const ModalContext = createContext<ModalContextProps | undefined>(undefined);
+
+export function ModalProvider({ children }: { children: ReactNode }) {
+  const [modalContent, setModalContent] = useState<ReactNode | null>(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const show = (content: ReactNode) => {
+    setModalContent(content);
+    setShowModal(true);
+  };
+
+  const hide = () => {
+    setShowModal(false);
+    setTimeout(() => {
+      setModalContent(null);
+    }, 300); // 根据转换持续时间调整此超时时间
+  };
+
+  return (
+    <ModalContext.Provider value={{ show, hide }}>
+      {children}
+      {showModal && (
+        <Modal showModal={showModal} setShowModal={setShowModal}>
+          {modalContent}
+        </Modal>
+      )}
+    </ModalContext.Provider>
+  );
+}
+
+export function useModal() {
+  return useContext(ModalContext);
+}

@@ -1,0 +1,1 @@
+This project is power by Next.js.
