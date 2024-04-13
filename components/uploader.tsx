@@ -57,7 +57,7 @@ export default function Uploader() {
                 <div className="p-2">
                   <p className="font-semibold text-gray-900">File uploaded!</p>
                   <p className="mt-1 text-sm text-gray-500">
-                    Your file has been uploaded to{" "}
+                    你的文件已成功上传至 {" "}
                     <a
                       className="font-medium text-gray-900 underline"
                       href={url}

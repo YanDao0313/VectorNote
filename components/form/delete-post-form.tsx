@@ -31,7 +31,7 @@ export default function DeletePostForm({ postName }: { postName: string }) {
       <div className="relative flex flex-col space-y-4 p-5 sm:p-10">
         <h2 className="font-cal text-xl dark:text-white">删除帖子</h2>
         <p className="text-sm text-stone-500 dark:text-stone-400">
-          永久删除你的帖子。输入标题{" "}<b>{postName}</b>来确认。
+          永久删除你的帖子。输入标题<b>{postName}</b>来确认。
         </p>
 
         <input

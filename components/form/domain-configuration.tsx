@@ -59,8 +59,8 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
       {txtVerification ? (
         <>
           <p className="text-sm dark:text-white">
-            请在{" "}<InlineSnippet>{domainJson.apexName}</InlineSnippet>
-            添加 TXT 记录以证明你对<InlineSnippet>{domainJson.name}</InlineSnippet>
+            请在{" "}<InlineSnippet>{domainJson.apexName}</InlineSnippet>{" "}
+            添加 TXT 记录以证明你对{" "}<InlineSnippet>{domainJson.name}</InlineSnippet>{" "}
             的控制权
           </p>
           <div className="my-5 flex items-start justify-start space-x-10 rounded-md bg-stone-50 p-2 dark:bg-stone-800 dark:text-white">
@@ -122,7 +122,7 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
           </div>
           <div className="my-3 text-left">
             <p className="my-5 text-sm dark:text-white">
-              为了配置你的 {" "}
+              为了配置你的{" "}
               {recordType === "A" ? "apex domain" : "subdomain"} (
               <InlineSnippet>
                 {recordType === "A" ? domainJson.apexName : domainJson.name}
@@ -154,7 +154,7 @@ export default function DomainConfiguration({ domain }: { domain: string }) {
               </div>
             </div>
             <p className="mt-5 text-sm dark:text-white">
-              注意：对于TTL，如果<InlineSnippet>86400</InlineSnippet>不可用，请设置尽可能高的值。此外，更改传播最多需要一天。
+              注意：对于TTL，如果 <InlineSnippet>86400</InlineSnippet> 不可用，请设置尽可能高的值。此外，记录更改的传播最多需要一天。
             </p>
           </div>
         </>

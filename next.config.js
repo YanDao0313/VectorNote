@@ -9,6 +9,7 @@ module.exports = {
   },
   images: {
     remotePatterns: [
+      { hostname: "lxxwppdo8z6cy65n.public.blob.vercel-storage.com" },
       { hostname: "public.blob.vercel-storage.com" },
       { hostname: "res.cloudinary.com" },
       { hostname: "abs.twimg.com" },

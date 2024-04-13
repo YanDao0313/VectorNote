@@ -30,7 +30,7 @@ export default async function PostSettings({
         </h1>
         <Form
           title="页面路径"
-          description="这是你文章的路径信息即 URL，只能包含小写字母、数字和西文半角连字符。"
+          description="这是你文章的路径信息即文章链接的一部分，只能包含小写英文字母、数字和西文半角连字符。"
           helpText="请输入一个独一无二的路径。"
           inputAttrs={{
             name: "slug",

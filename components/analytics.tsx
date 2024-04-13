@@ -14,27 +14,27 @@ import Image from "next/image";
 
 const chartdata = [
   {
-    date: "Jan 23",
+    date: "一月 23",
     Visitors: 2890,
   },
   {
-    date: "Feb 23",
+    date: "二月 23",
     Visitors: 2756,
   },
   {
-    date: "Mar 23",
+    date: "三月 23",
     Visitors: 3322,
   },
   {
-    date: "Apr 23",
+    date: "四月 23",
     Visitors: 3470,
   },
   {
-    date: "May 23",
+    date: "五月 23",
     Visitors: 3475,
   },
   {
-    date: "Jun 23",
+    date: "六月 23",
     Visitors: 3129,
   },
 ];
@@ -59,26 +59,26 @@ const referrers = [
 ];
 
 const countries = [
-  { name: "United States of America", value: 789, code: "US" },
-  { name: "India", value: 676, code: "IN" },
-  { name: "Germany", value: 564, code: "DE" },
+  { name: "People's Republic of China", value: 789, code: "CN" },
+  { name: "United States of America", value: 646, code: "US" },
+  { name: "Hong Kong, China", value: 564, code: "HK" },
   { name: "United Kingdom", value: 234, code: "GB" },
-  { name: "Spain", value: 191, code: "ES" },
+  { name: "India", value: 191, code: "IN" },
 ];
 
 const categories = [
   {
-    title: "浏览者最常访问",
+    title: "访客最常访问",
     subtitle: "页面",
     data: pages,
   },
   {
-    title: "浏览者来源",
+    title: "访客来源",
     subtitle: "来源",
     data: referrers,
   },
   {
-    title: "浏览者国家分布",
+    title: "访客国家分布",
     subtitle: "国家",
     data: countries,
   },
@@ -88,7 +88,7 @@ export default function AnalyticsMockup() {
   return (
     <div className="grid gap-6">
       <Card>
-        <Title>Visitors</Title>
+        <Title>访客总计</Title>
         <AreaChart
           className="mt-4 h-72"
           data={chartdata}
@@ -109,7 +109,7 @@ export default function AnalyticsMockup() {
                 <Bold>{subtitle}</Bold>
               </Text>
               <Text>
-                <Bold>浏览者</Bold>
+                <Bold>访客</Bold>
               </Text>
             </Flex>
             <BarList

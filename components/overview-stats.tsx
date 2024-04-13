@@ -6,14 +6,14 @@ import { useMemo } from "react";
 
 export default function OverviewStats() {
   const data = useMemo(() => {
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+    const months = ["一月", "二月", "三月", "四月", "五月", "六月"];
     return [
       ...months.map((month) => ({
         Month: `${month} 23`,
         "Total Visitors": random(20000, 170418),
       })),
       {
-        Month: "Jul 23",
+        Month: "七月 23",
         "Total Visitors": 170418,
       },
     ];
@@ -22,7 +22,7 @@ export default function OverviewStats() {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       <Card className="dark:!bg-stone-900">
-        <Text>所有浏览者</Text>
+        <Text>所有访客</Text>
         <Flex
           className="space-x-3 truncate"
           justifyContent="start"
