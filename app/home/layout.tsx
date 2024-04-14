@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vector Notes",
+  title: "Vector Note",
   description: "念念不忘，必有回响。",
 };
 

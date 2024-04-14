@@ -40,13 +40,13 @@ export default function HomePage() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Continue{" "}
+            继续 Continue{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Start writing and sharing your ideas for free right now.
+            登入以开始写作<br />Start writing and sharing your ideas for free right now.
           </p>
         </a>
       </div>
